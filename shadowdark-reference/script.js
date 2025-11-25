@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const nameEl = document.getElementById("name");
   const classRaceEl = document.getElementById("classRace");
   const backgroundEl = document.getElementById("background");
+  const backgroundE2 = document.getElementById("backgroundDescription");
   const notesEl = document.getElementById("notes");
   const rollLog = document.getElementById("rollLog");
 
@@ -161,7 +162,7 @@ document.addEventListener("DOMContentLoaded", () => {
       cha: getModifierForScore(Number(scores.cha)),
     };
 
-    const gear = [...classObj.gear, "Pack: basic adventuring gear", `Background: ${background.name}`];
+    const gear = [...classObj.gear, "Pack: basic adventuring gear"];
 
     return {
       name: randomName(),
@@ -179,7 +180,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function renderCharacter(c) {
     nameEl.textContent = c.name;
     classRaceEl.textContent = `${c.class.name} — ${c.race.name}`;
-    backgroundEl.textContent = `Background: ${c.background.name}`;
+    backgroundEl.textContent = `Background: ${c.background.name} - ${c.background.description}`;
     notesEl.textContent = `Hit die: ${c.class.hd}`;
 
     const s = c.scores;
