@@ -128,7 +128,7 @@ h1 {
 /* ---------- CARD IMAGES ---------- */
 
 .card:nth-child(1) { background-image: url("global-assets/images/shadowdark.png"); }
-.card:nth-child(2) { background-image: url("global-assets/images/telos.png"); }
+.card:nth-child(2) { background-image: url("global-assets/images/hollow-thrones.png"); }
 .card:nth-child(3) { background-image: url("global-assets/images/5e.png"); }
 .card:nth-child(4) { background-image: url("global-assets/images/5.5e.png"); }
 .card:nth-child(5) { background-image: url("global-assets/images/nimble.png"); }
