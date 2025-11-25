@@ -1,0 +1,31 @@
+{
+  "STANDARDARRAYS": [
+    { "id": "fighter1", "str": "15", "dex": "13", "con": "14", "int": "10", "wis": "9", "cha": "8" },
+    { "id": "fighter2", "str": "16", "dex": "12", "con": "13", "int": "9", "wis": "10", "cha": "7" },
+    { "id": "fighter3", "str": "14", "dex": "11", "con": "15", "int": "8", "wis": "9", "cha": "12" },
+
+    { "id": "thief1", "str": "9", "dex": "15", "con": "12", "int": "13", "wis": "10", "cha": "11" },
+    { "id": "thief2", "str": "11", "dex": "16", "con": "10", "int": "12", "wis": "8", "cha": "13" },
+    { "id": "thief3", "str": "10", "dex": "14", "con": "13", "int": "11", "wis": "9", "cha": "12" },
+
+    { "id": "priest1", "str": "12", "dex": "10", "con": "13", "int": "9", "wis": "15", "cha": "14" },
+    { "id": "priest2", "str": "13", "dex": "9", "con": "12", "int": "10", "wis": "14", "cha": "15" },
+    { "id": "priest3", "str": "11", "dex": "11", "con": "12", "int": "9", "wis": "16", "cha": "13" },
+
+    { "id": "wizard1", "str": "8", "dex": "13", "con": "10", "int": "15", "wis": "12", "cha": "9" },
+    { "id": "wizard2", "str": "9", "dex": "11", "con": "8", "int": "16", "wis": "14", "cha": "10" },
+    { "id": "wizard3", "str": "10", "dex": "12", "con": "9", "int": "14", "wis": "13", "cha": "11" }
+  ],
+
+  "MODIFIERS": [
+    { "minscore": "1", "maxscore": "3", "mod": "-4" },
+    { "minscore": "4", "maxscore": "5", "mod": "-3" },
+    { "minscore": "6", "maxscore": "7", "mod": "-2" },
+    { "minscore": "8", "maxscore": "9", "mod": "-1" },
+    { "minscore": "10", "maxscore": "11", "mod": "0" },
+    { "minscore": "12", "maxscore": "13", "mod": "1" },
+    { "minscore": "14", "maxscore": "15", "mod": "2" },
+    { "minscore": "16", "maxscore": "17", "mod": "3" },
+    { "minscore": "18", "maxscore": "20", "mod": "4" }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "BACKGROUNDS": [
+    { "id": "urchin", "name": "Urchin", "description": "You gew up in the merciless treets of a large city." },
+    { "id": "wanted", "name": "Wanted", "description": "There's a price on your head, but you have allies." },
+    { "id": "cult_initiate", "name": "Cult Initiate", "description": "You know blasphemous secrets and rituals." },
+    { "id": "thieves_guild", "name": "Thieves' Guild", "description": "You have connections, contacts, and debts." },
+    { "id": "banished", "name": "Banished", "description": "Your people cast you out for supposed crimes." },
+    { "id": "orphaned", "name": "Orphaned", "description": "An unusual guardian rescued and raised you." },
+    { "id": "wizards_apprentice", "name": "Wizard's Apprentice", "description": "You have a knack and eye for magic." },
+    { "id": "jeweler", "name": "Jeweler", "description": "You can easily appraise value and authenticity." },
+    { "id": "herbalist", "name": "Herbalist", "description": "You know plants, medicines, and poisons." },
+    { "id": "barbarian", "name": "Barbarian", "description": "You left the horde, but it never quite left you." },
+    { "id": "mercenary", "name": "Mercenary", "description": "You fought friend and foe alike for your coin." },
+    { "id": "sailor", "name": "Sailor", "description": "Pirate, privateer, or merchant - the seas are yours." },
+    { "id": "acolyte", "name": "Acolyte", "description": "You're well trained in religious rites and doctrines." },
+    { "id": "soldier", "name": "Soldier", "description": "You served as a fighter in an organized army." },
+    { "id": "ranger", "name": "Ranger", "description": "The woods and wilds are your true home." },
+    { "id": "scout", "name": "Scout", "description": "You survived on stealth, observation, and speed." },
+    { "id": "minstrel", "name": "Minstrel", "description": "You've traveled far with your charm and talent." },
+    { "id": "scholar", "name": "Scholar", "description": "You know much about ancient history and lore." },
+    { "id": "noble", "name": "Noble", "description": "A famous name has opened many doors for you." },
+    { "id": "chirurgeon", "name": "Chirurgeon", "description": "You know anatomy, surgery, and first aid." }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "WEAPONS": [
+    {
+      "id": "bastard sword",
+      "name": "Bastard sword",
+      "cost": "10 gp",
+      "dmg": "1d8/1d10",
+      "hd": "1d8",
+      "type": "M",
+      "range": "C",
+      "properties": "V, 2 slots"
+    },
+    {
+      "id": "club",
+      "name": "Club",
+      "dmg": "1d4",
+      "cost": "5 cp",
+      "type": "M",
+      "range": "C",
+      "properties": "-"
+    },
+    {
+      "id": "crossbow",
+      "name": "Crossbow",
+      "dmg": "1d6",
+      "cost": "8 gp",
+      "type": "R",
+      "range": "F",
+      "properties": "2H, L"
+    },
+    {
+      "id": "dagger",
+      "name": "Dagger",
+      "dmg": "1d4",
+      "cost": "1 gp",
+      "type": "M/R",
+      "range": "C/N",
+      "properties": "F, Th"
+    },
+    {
+      "id": "greataxe",
+      "name": "Greataxe",
+      "dmg": "1d8/1d12",
+      "cost": "10 gp",
+      "type": "M",
+      "range": "C",
+      "properties": "V, 2 slots"
+    },
+    {
+      "id": "greatsword",
+      "name": "Greatsword",
+      "dmg": "1d12",
+      "cost": "12 gp",
+      "type": "M",
+      "range": "C",
+      "properties": "2H, 2 slots"
+    },
+    {
+      "id": "javelin",
+      "name": "Javelin",
+      "dmg": "1d4",
+      "cost": "5 sp",
+      "type": "M/R",
+      "range": "C/F",
+      "properties": "Th"
+    },
+    {
+      "id": "longbow",
+      "name": "Longbow",
+      "dmg": "1d8",
+      "cost": "8 gp",
+      "type": "R",
+      "range": "F",
+      "properties": "2H"
+    },
+    {
+      "id": "longsword",
+      "name": "Longsword",
+      "dmg": "1d8",
+      "cost": "9 gp",
+      "type": "M",
+      "range": "C",
+      "properties": "-"
+    },
+    {
+      "id": "mace",
+      "name": "Mace",
+      "dmg": "1d6",
+      "cost": "5 gp",
+      "type": "M",
+      "range": "C",
+      "properties": "-"
+    },
+    {
+      "id": "shortbow",
+      "name": "Shortbow",
+      "dmg": "1d4",
+      "cost": "6 gp",
+      "type": "R",
+      "range": "F",
+      "properties": "2H"
+    },
+    {
+      "id": "shortsword",
+      "name": "Shortsword",
+      "dmg": "1d6",
+      "cost": "7 gp",
+      "type": "M",
+      "range": "C",
+      "properties": "-"
+    },
+    {
+      "id": "spear",
+      "name": "Spear",
+      "dmg": "1d6",
+      "cost": "5 sp",
+      "type": "M/R",
+      "range": "C/N",
+      "properties": "Th"
+    },
+    {
+      "id": "staff",
+      "name": "Staff",
+      "dmg": "1d4",
+      "cost": "5 sp",
+      "type": "M",
+      "range": "C",
+      "properties": "2H"
+    },
+    {
+      "id": "warhammer",
+      "name": "Warhammer",
+      "dmg": "1d10",
+      "type": "M",
+      "range": "C",
+      "properties": "2H"
+    }
+  ]
+}

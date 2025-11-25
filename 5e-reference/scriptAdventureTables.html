@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DMG Loot Tables</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scriptGameData.js"></script>
+    <script defer src="scriptRandomTables.js"></script>
+  </head>
+
+  <label for="dungeon-goals">Dungeon Goals</label>
+  <table class="adv-table" id="dungeon-goals">
+    <tr>
+      <th>d20</th>
+      <th>Goal</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Stop the dungeon's monstrous inhabitants from raiding the surface world.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Foil a villain's evil scheme.</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Destroy a magical threat inside the dungeon.</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Acquire treasure.</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Find a particular item for a specific purpose.</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Rescue a captive.</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Find information needed for a special purpose.</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Rescue a captive.</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Discover the fate of a previous adventuring party.</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Find an NPC who disappeared in the area.</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Slay a dragon or some other challenging monster.</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Discover the nature and origin of a strange location or phenomenon.</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Pursue fleeing foes taking refuge in the dungeon.</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Escape from captivity in the dungeon.</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Clear a ruin so it can be rebuilt and reoccupied.</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Discover why a villain is interested in the dungeon.</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Win a bet or complete a rite of passage by surviving in the dungeon for a certain amount of time.</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>Parley with a villain the dungeon.</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>Hide from a threat outside the dungeon.</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>Roll twice, ignoring results of 20.</td>
+    </tr>
+  </table>
+
+  <label for="wilderness-goals">Wilderness Goals</label>
+  <table class="adv-table" id="wilderness-goals">
+    <tr>
+      <th>d20</th>
+      <th>Goal</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Locate a dungeon or other site of interest (roll on the Dungeon Goals table to find out why)</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Assess the scope of a natural or unnatural disaster.</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Escort an NPC to a destination.</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Arrive at a destination without being seen by the villain's forces.</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Stop monsters from raiding caravans and farms.</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Establish trade with a distant town.</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Protect a caravan traveling to a distant town.</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Map a new land.</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Find a place to establish a colony.</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Find a natural resource.</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Hunt a specific monster.</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Return home from a distant place.</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Obtain information from a reclusive hermit.</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Find an object that was lost in the wilds.</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Discover the fate of a missing group of explorers.</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Pursue fleeing foes.</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Assess the size of an approaching army.</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>Escape the reign of a tyrant.</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>Protect a wilderness site from attackers.</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>Roll twice, ignoring results of 20.</td>
+    </tr>
+  </table>
+
+  <label for="other-goals">Other Goals</label>
+  <table class="adv-table" id="other-goals">
+    <tr>
+      <th>d12</th>
+      <th>Goal</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Seize control of a fortified location such as a fortress, town, or ship.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Defend a location from attackers.</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Retrieve an object from inside a secure location in a settlement.</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Retrieve an object from a caravan.</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Salvage an object or goods from a lost vessel or caravan.</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Break a prisoner out of a jail or prison camp.</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Escape from a jail or prison camp.</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Successfully travel through an obstacle course to gain recognition or reward.</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Infiltrate a fortified location.</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Find the source of strange occurrences in a haunted house or other location.</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Interfere with the operation of a business.</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Rescue a character, monster, or object from a natural or unnatural disaster.</td>
+    </tr>
+  </table>
+
+  <label for="adventure-villains">Adventure Villains</label>
+  <table class="adv-table" id="adventure-villains">
+    <tr>
+      <th>d20</th>
+      <th>Villain</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Beast or monstrosity with no particular agenda</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Aberration bent on corruption or domination</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Fiend bent on corruption or destruction</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Dragon bent on domination and plunder</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Giant bent on plunder</td>
+    </tr>
+    <tr>
+      <td>6-7</td>
+      <td>Undead with any agenda</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Fey with a mysterious goal</td>
+    </tr>
+    <tr>
+      <td>9-10</td>
+      <td>Humanoid cultist</td>
+    </tr>
+    <tr>
+      <td>11-12</td>
+      <td>Humanoid conquerer</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Humanoid seeking revenge</td>
+    </tr>
+    <tr>
+      <td>14-15</td>
+      <td>Humanoid schemer seeking to rule</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Humanoid criminal mastermind</td>
+    </tr>
+    <tr>
+      <td>17-18</td>
+      <td>Humanoid raider or ravager</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>Humanoid under a curse</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>Misguided humanoid zealot</td>
+    </tr>
+  </table>
+
+  <label for="adventure-allies">Adventure Allies</label>
+  <table class="adv-table" id="adventure-allies">
+    <tr>
+      <th>d12</th>
+      <th>Goal</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Skilled adventurer</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Inexperienced adventurer</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Enthusiastic commoner</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Soldier</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Priest</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Sage</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Revenge seeker</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Raving lunatic</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Celestial ally</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Fey ally</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>THING</td>
+    </tr>
+  </table>
+
+  <label for="adventure-introduction">Adventure Introduction</label>
+  <table class="adv-table" id="adventure-introduction">
+    <tr>
+      <th>d20</th>
+      <th>Goal</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>THING</td>
+    </tr>
+  </table>
+
+  <table class="adv-table" id="dungeon-goals">
+    <tr>
+      <th>d20</th>
+      <th>Goal</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>THING</td>
+    </tr>
+  </table>
+
+  <table class="adv-table" id="dungeon-goals">
+    <tr>
+      <th>d20</th>
+      <th>Goal</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>THING</td>
+    </tr>
+  </table>
+
+  <table class="adv-table" id="dungeon-goals">
+    <tr>
+      <th>d20</th>
+      <th>Goal</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>THING</td>
+    </tr>
+  </table>
+
+  <table class="adv-table" id="dungeon-goals">
+    <tr>
+      <th>d20</th>
+      <th>Goal</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>THING</td>
+    </tr>
+  </table>
+
+  <table class="adv-table" id="dungeon-goals">
+    <tr>
+      <th>d20</th>
+      <th>Goal</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>THING</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>THING</td>
+    </tr>
+  </table>
+</html>
+
+</html>

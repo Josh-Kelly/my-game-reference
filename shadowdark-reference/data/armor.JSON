@@ -1,0 +1,44 @@
+{
+  "ARMOR": [
+    {
+      "id": "leather armor",
+      "name": "Leather armor",
+      "cost": "10 gp",
+      "slots": "1",
+      "ac": "11 + DEX mod",
+      "properties": "-"
+    },
+    {
+      "id": "chainmail",
+      "name": "Leather armor",
+      "cost": "60 gp",
+      "slots": "1",
+      "ac": "11 + DEX mod",
+      "properties": "Disadvantage on stealth, swim"
+    },
+    {
+      "id": "plate mail",
+      "name": "Leather armor",
+      "cost": "130 gp",
+      "slots": "1",
+      "ac": "11 + DEX mod",
+      "properties": "No swim, disadvantage on stealth"
+    },
+    {
+      "id": "shield",
+      "name": "Leather armor",
+      "cost": "10 gp",
+      "slots": "1",
+      "ac": "11 + DEX mod",
+      "properties": "Occupies one hand"
+    },
+    {
+      "id": "mithral (metal armor only)",
+      "name": "Mithral (metal armor only)",
+      "cost": "x4",
+      "slots": "-1",
+      "ac": "-",
+      "properties": "No penalty stealth, swim"
+    }
+  ]
+}
