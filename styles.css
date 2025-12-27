@@ -127,25 +127,25 @@ h1 {
 
 /* ---------- CARD IMAGES ---------- */
 #card-shadowdark {
-  background-image: url("global-assets/images/shadowdark.png");
+  background-image: url("0-global-assets/images/shadowdark.png");
 }
 
 #card-hollow-thrones {
-  background-image: url("global-assets/images/hollow-thrones.png");
+  background-image: url("0-global-assets/images/hollow-thrones.png");
 }
 
 #card-5e {
-  background-image: url("global-assets/images/5e.png");
+  background-image: url("0-global-assets/images/5e.png");
 }
 
-#card-5-5e {
-  background-image: url("global-assets/images/5.5e.png");
+#card-gebrecan-5e {
+  background-image: url("0-global-assets/images/gebrecan-5e.png");
 }
 
 #card-nimble {
-  background-image: url("global-assets/images/nimble.png");
+  background-image: url("0-global-assets/images/nimble.png");
 }
 
 #card-cc {
-  background-image: url("global-assets/images/c&c.png");
+  background-image: url("0-global-assets/images/c&c.png");
 }
