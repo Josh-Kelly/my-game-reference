@@ -1,0 +1,19 @@
+{
+  "alignments": [
+    {
+      "id": "chaotic",
+      "name": "Chaotic",
+      "description": "Chaotic characters align themselves with destruction, ambition, and wickedness. Chaotic characters adopt a \"survival of the fittest\" mentality."
+    },
+    {
+      "id": "lawful",
+      "name": "Lawful",
+      "description": "Lawful characters align themselves with fairness, order, and virtue. Lawful characters operate from a \"good of the whole\" mentality."
+    },
+    {
+      "id": "neutral",
+      "name": "Neutral",
+      "description": "Neutral characters find balance between Law and Chaos. They align with the cycle of growth and decline, adopting a \"nature must take its course\" mentality."
+    }
+  ]
+}

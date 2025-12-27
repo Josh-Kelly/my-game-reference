@@ -1,0 +1,40 @@
+{
+  "RACES": [
+    {
+      "id": "dwarf",
+      "name": "Dwarf",
+      "language": "Common and Dwarvish",
+      "feature": "Stout. Start with +2 HP. Roll hit points per level with advantage."
+    },
+    {
+      "id": "elf",
+      "name": "Elf",
+      "language": "Common, Elvish, and Sylvan",
+      "feature": "Farsight. You get a +1 bonus to attack rolls with ranged weapons or a +1 bonus to spellcasting checks."
+    },
+    {
+      "id": "goblin",
+      "name": "Goblin",
+      "language": "Common and Goblin",
+      "feature": "Keen Senses. You can't be surprised."
+    },
+    {
+      "id": "half-orc",
+      "name": "Half-orc",
+      "language": "Common and Orcish",
+      "feature": "Mighty. You have a +1 bonus to attack and damage rolls with melee weapons."
+    },
+    {
+      "id": "halfling",
+      "name": "Halfling",
+      "language": "Common",
+      "feature": "Stealthy. Once per day, you can become invisible for 3 rounds."
+    },
+    {
+      "id": "human",
+      "name": "Human",
+      "language": "Common language and one additional common language (pg. 32)",
+      "feature": "Ambitious. You gain one additional talent roll at 1st level."
+    }
+  ]
+}

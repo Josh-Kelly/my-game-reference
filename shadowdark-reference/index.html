@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Shadowdark — Character Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container" id="app">
+      <a href="../index.html">Back</a>
+      <header>
+        <h1>Shadowdark Character Generator</h1>
+        <p class="lead">Quickly create a PC — roll stats, pick race/class, and export your result.</p>
+      </header>
+
+      <section class="controls" aria-labelledby="controlsHeading">
+        <h2 id="controlsHeading">Options</h2>
+
+        <label>
+          Stat method:
+          <select id="statMethod" aria-label="Stat roll method">
+            <option value="4d6dl">4d6 drop lowest (standard)</option>
+            <option value="3d6">3d6 (in order)</option>
+            <option value="standard">Standard array</option>
+            <option value="manual">Manual entry</option>
+          </select>
+        </label>
+
+        <label>
+          Class:
+          <select id="classSelect" aria-label="Choose class"></select>
+        </label>
+
+        <label>
+          Race:
+          <select id="raceSelect" aria-label="Choose race"></select>
+        </label>
+
+        <label>
+          Background:
+          <select id="bgSelect" aria-label="Choose background"></select>
+        </label>
+
+        <label>
+          <span id="bgDescription"></span>
+        </label>
+
+        <div class="buttons">
+          <button id="generateBtn">Generate Character</button>
+          <button id="regenStatsBtn">Roll Stats Only</button>
+          <button id="exportJsonBtn">Download JSON</button>
+          <button id="copyBtn">Copy to Clipboard</button>
+          <button id="exportPdfBtn">Export PDF</button>
+        </div>
+      </section>
+
+      <section class="character" aria-live="polite" aria-labelledby="charHeading">
+        <h2 id="charHeading">Character</h2>
+
+        <div class="row">
+          <div class="card summary">
+            <h3 id="name">—</h3>
+            <p class="sub" id="classRace">—</p>
+            <p id="background">—</p>
+            <p id="notes" class="muted">Use the options above to customize generation.</p>
+          </div>
+
+          <div class="card stats">
+            <h3>Ability Scores</h3>
+            <table class="stats-table" aria-label="Ability scores">
+              <thead>
+                <tr>
+                  <th>Str</th>
+                  <th>Dex</th>
+                  <th>Con</th>
+                  <th>Int</th>
+                  <th>Wis</th>
+                  <th>Cha</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr id="scoresRow">
+                  <td id="str">—</td>
+                  <td id="dex">—</td>
+                  <td id="con">—</td>
+                  <td id="int">—</td>
+                  <td id="wis">—</td>
+                  <td id="cha">—</td>
+                </tr>
+              </tbody>
+            </table>
+            <div id="mods" class="mods">
+              <span id="modStr">—</span>
+              <span id="modDex">—</span>
+              <span id="modCon">—</span>
+              <span id="modInt">—</span>
+              <span id="modWis">—</span>
+              <span id="modCha">—</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="card details">
+            <h3>Details & Starting Gear</h3>
+            <ul id="gearList"></ul>
+          </div>
+
+          <div class="card roll-log">
+            <h3>Roll log</h3>
+            <pre id="rollLog" aria-live="polite">No rolls yet.</pre>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+
+    <script src="dataObjects.js" defer></script>
+    <script src="script.js" defer></script>
+  </body>
+</html>

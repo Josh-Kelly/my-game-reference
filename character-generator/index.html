@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>D&D Character Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>D&D Character Generator</h1>
+
+    <!-- Race selection -->
+    <section>
+      <h2>Race</h2>
+      <label for="race">Race:</label>
+      <select id="race">
+        <option value="">--Select Race--</option>
+        <option value="dragonborn">Dragonborn</option>
+        <option value="dwarf">Dwarf</option>
+        <option value="elf">Elf</option>
+        <option value="human">Human</option>
+        <option value="qurad">Qurad</option>
+        <option value="halfling">Halfling</option>
+        <option value="gnome">Gnome</option>
+      </select>
+
+      <!-- Dragonborn color selection -->
+      <div id="dragonborn-options" class="hidden">
+        <label for="dragonborn-color">Dragonborn Color:</label>
+        <select id="dragonborn-color">
+          <option value="">--Select Color--</option>
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+          <option value="black">Black</option>
+          <option value="white">White</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </div>
+
+      <div id="race-features" class="feature-block"></div>
+      <div id="ability-scores" class="feature-block"></div>
+    </section>
+
+    <!-- Background selection -->
+    <section>
+      <h2>Background</h2>
+      <label for="background">Background:</label>
+      <select id="background">
+        <option value="">--Select Background--</option>
+        <option value="civicAuthorities">Civic Authorities</option>
+        <option value="formerHuscarl">Former Huscarl</option>
+        <option value="drakeshield">Drakeshield</option>
+        <option value="riteOfStars">Rite of Stars</option>
+        <option value="staffAndTower">Staff & Tower</option>
+        <option value="orderOfTheWeal">Order of the Weal</option>
+        <option value="thirdLodgeNegotiator">Third Lodge Negotiator</option>
+        <option value="piker">Piker</option>
+        <option value="craftsman">Craftsman</option>
+        <option value="criminal">Criminal</option>
+        <option value="scribe">Scribe</option>
+      </select>
+
+      <div id="background-suboptions" class="hidden">
+        <label for="background-sub">Sub-Option:</label>
+        <select id="background-sub"></select>
+      </div>
+
+      <div id="background-features" class="feature-block"></div>
+    </section>
+
+    <br />
+    <button id="generate">Generate Character</button>
+
+    <div id="character-summary" class="feature-block"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

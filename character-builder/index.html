@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Character Builder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Character Builder</h1>
+
+    <div id="builder-container">
+      <form id="character-form">
+        <label for="char-name">Character Name:</label>
+        <input type="text" id="char-name" name="char-name" />
+
+        <label for="class-select">Class:</label>
+        <select id="class-select" name="class-select">
+          <option value="">-- Select Class --</option>
+        </select>
+
+        <label for="background-select">Background:</label>
+        <select id="background-select" name="background-select">
+          <option value="">-- Select Background --</option>
+        </select>
+
+        <div id="spellcasting-section" class="hidden">
+          <label for="spell-select-available">Available Spells:</label>
+          <div style="position: relative; display: flex; align-items: flex-start">
+            <select id="spell-select-available" multiple size="5" style="flex-grow: 1"></select>
+            <div id="spell-hover-popup" class="hover-popup hidden"></div>
+          </div>
+
+          <label for="spell-select-chosen">Chosen Spells:</label>
+          <select id="spell-select-chosen" multiple size="5"></select>
+
+          <button type="button" id="add-spell-btn">Add →</button>
+          <button type="button" id="remove-spell-btn">← Remove</button>
+        </div>
+      </form>
+
+      <div id="features-column">
+        <h2>Character Features</h2>
+        <div id="features-list">
+          <p>No features selected.</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="data/classes-data.js"></script>
+    <script src="data/backgrounds-data.js"></script>
+    <script src="data/races-data.js"></script>
+    <script src="data/spells-data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

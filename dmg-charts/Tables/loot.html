@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DMG Loot Tables</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <script defer src="../main.js"></script>
+    <script defer src="../table-scripts.js"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="loot.html">Loot</a>
+      <a href="monsters.html">Monsters</a>
+      <a href="dungeon.html">Dungeons</a>
+      <a href="npc.html">NPCs</a>
+      <a href="world.html">World</a>
+    </nav>
+
+    <div class="container">
+      <h1>Dungeon Master's Guide Tables — Loot</h1>
+
+      <!-- ===== Individual Treasure Tables ===== -->
+      <h2>Individual Treasure</h2>
+
+      <label for="challenge-select"><strong>Challenge Rating:</strong></label>
+      <select id="challenge-select">
+        <option value="0-4" selected>Challenge 0–4</option>
+        <option value="5-10">Challenge 5–10</option>
+        <option value="11-16">Challenge 11–16</option>
+        <option value="17+">Challenge 17+</option>
+      </select>
+
+      <!-- Challenge Tables -->
+      <div id="challenge-tables">
+        <!-- Challenge 0–4 -->
+        <div class="challenge-table" data-challenge="0-4">
+          <h3>Individual Treasure: Challenge 0–4</h3>
+          <button class="clear-rolls">Clear Rolls</button>
+          <table>
+            <thead>
+              <tr>
+                <th><button class="roll-btn">d100</button></th>
+                <th>CP</th>
+                <th>SP</th>
+                <th>EP</th>
+                <th>GP</th>
+                <th>PP</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>01–30</td>
+                <td><button class="roll-btn-only-sum">5d6</button></td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>31–60</td>
+                <td>-</td>
+                <td><button class="roll-btn-only-sum">4d6</button></td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>61–70</td>
+                <td>-</td>
+                <td>-</td>
+                <td><button class="roll-btn-only-sum">3d6</button></td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>71–95</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><button class="roll-btn-only-sum">3d6</button></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>96–00</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><button class="roll-btn-only-sum">1d6</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Challenge 5–10 -->
+        <div class="challenge-table" data-challenge="5-10" style="display: none">
+          <h3>Individual Treasure: Challenge 5–10</h3>
+          <button class="clear-rolls">Clear Rolls</button>
+          <table>
+            <thead>
+              <tr>
+                <th><button class="roll-btn">d100</button></th>
+                <th>CP</th>
+                <th>SP</th>
+                <th>EP</th>
+                <th>GP</th>
+                <th>PP</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>01–30</td>
+                <td><button class="roll-btn-only-sum">4d6 x 100</button></td>
+                <td>-</td>
+                <td><button class="roll-btn-only-sum">1d6 x 10</button></td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>31–60</td>
+                <td>-</td>
+                <td><button class="roll-btn-only-sum">6d6 x 10</button></td>
+                <td>-</td>
+                <td><button class="roll-btn-only-sum">2d6 x 10</button></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>61–70</td>
+                <td>-</td>
+                <td>-</td>
+                <td><button class="roll-btn-only-sum">3d6 x 10</button></td>
+                <td><button class="roll-btn-only-sum">2d6 x 10</button></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>71–95</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><button class="roll-btn-only-sum">4d6 x 10</button></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>96–00</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><button class="roll-btn-only-sum">2d6 x 10</button></td>
+                <td><button class="roll-btn-only-sum">3d6</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Challenge 11–16 -->
+        <div class="challenge-table" data-challenge="11-16" style="display: none">
+          <h3>Individual Treasure: Challenge 11–16</h3>
+          <button class="clear-rolls">Clear Rolls</button>
+          <table>
+            <thead>
+              <tr>
+                <th><button class="roll-btn">d100</button></th>
+                <th>CP</th>
+                <th>SP</th>
+                <th>EP</th>
+                <th>GP</th>
+                <th>PP</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>01–20</td>
+                <td>-</td>
+                <td><button class="roll-btn-only-sum">4d6 x 100</button></td>
+                <td>-</td>
+                <td><button class="roll-btn-only-sum">1d6 x 100</button></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>21–35</td>
+                <td>-</td>
+                <td>-</td>
+                <td><button class="roll-btn-only-sum">1d6 x 100</button></td>
+                <td><button class="roll-btn-only-sum">1d6 x 100</button></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>36–75</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><button class="roll-btn-only-sum">2d6 x 100</button></td>
+                <td><button class="roll-btn-only-sum">1d6 x 10</button></td>
+              </tr>
+              <tr>
+                <td>76–00</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><button class="roll-btn-only-sum">2d6 x 100</button></td>
+                <td><button class="roll-btn-only-sum">2d6 x 10</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Challenge 17+ -->
+        <div class="challenge-table" data-challenge="17+" style="display: none">
+          <h3>Individual Treasure: Challenge 17+</h3>
+          <button class="clear-rolls">Clear Rolls</button>
+          <table>
+            <thead>
+              <tr>
+                <th><button class="roll-btn">d100</button></th>
+                <th>CP</th>
+                <th>SP</th>
+                <th>EP</th>
+                <th>GP</th>
+                <th>PP</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>01–15</td>
+                <td>-</td>
+                <td>-</td>
+                <td><button class="roll-btn-only-sum">2d6 x 1000</button></td>
+                <td><button class="roll-btn-only-sum">8d6 x 100</button></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>16–55</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><button class="roll-btn-only-sum">1d6 x 1000</button></td>
+                <td><button class="roll-btn-only-sum">1d6 x 100</button></td>
+              </tr>
+              <tr>
+                <td>56–00</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><button class="roll-btn-only-sum">1d6 x 1000</button></td>
+                <td><button class="roll-btn-only-sum">2d6 x 100</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- ===== Treasure Hoards ===== -->
+      <h2>Treasure Hoard: Challenge 0–4</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>d100</th>
+            <th>Coins</th>
+            <th>Gems or Art Objects</th>
+            <th>Magic Items</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <h2>Treasure Hoard: Challenge 5–10</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>d100</th>
+            <th>Coins</th>
+            <th>Gems or Art Objects</th>
+            <th>Magic Items</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <h2>Treasure Hoard: Challenge 11–16</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>d100</th>
+            <th>Coins</th>
+            <th>Gems or Art Objects</th>
+            <th>Magic Items</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <h2>Treasure Hoard: Challenge 17+</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>d100</th>
+            <th>Coins</th>
+            <th>Gems or Art Objects</th>
+            <th>Magic Items</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <!-- ===== Magic Item Tables ===== -->
+      <h2>Magic Item Table A</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>d100</th>
+            <th>Item</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <h2>Magic Item Table B</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>d100</th>
+            <th>Item</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <h2>Magic Item Table C</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>d100</th>
+            <th>Item</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <!-- ...through Tables I -->
+    </div>
+
+    <footer>Dungeon Master's Guide (2014) — Loot Tables</footer>
+  </body>
+</html>

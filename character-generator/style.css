@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f4f4f4;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+label {
+  font-weight: bold;
+}
+
+select, button {
+  margin: 5px 0 15px 0;
+  padding: 5px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.feature-block {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #aaa;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.feature-block ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+#character-summary {
+  margin-top: 20px;
+  border-color: #444;
+  background-color: #eee;
+}

@@ -1,0 +1,151 @@
+/* ---------- GLOBAL ---------- */
+
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=EB+Garamond:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "EB Garamond", serif;
+  background: url("images/dark-stone-bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #e5e1dc;
+  letter-spacing: 0.5px;
+  overflow-x: hidden;
+}
+
+/* Vignette + smoky darkness */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at center, rgba(0,0,0,0) 20%, rgba(0,0,0,0.6) 80%),
+    rgba(0,0,0,0.45);
+  z-index: -1;
+}
+
+/* ---------- MAIN CONTAINER ---------- */
+
+.container {
+  max-width: 1100px;
+  margin: 4rem auto;
+  padding: 3rem;
+  text-align: center;
+
+  background: rgba(20, 14, 14, 0.55);
+  border: 2px solid rgba(90, 40, 40, 0.4);
+  border-radius: 12px;
+  backdrop-filter: blur(4px);
+
+  box-shadow:
+    0 0 40px rgba(0, 0, 0, 0.7),
+    inset 0 0 30px rgba(0,0,0,0.5);
+}
+
+h1 {
+  margin-bottom: 2rem;
+  font-family: "UnifrakturCook", serif;
+  font-size: 4rem;
+  color: #d4c9b7;
+  letter-spacing: 2px;
+
+  text-shadow:
+    0 0 5px #a00,
+    0 0 15px rgba(150, 0, 0, 0.4),
+    0 2px 10px black;
+}
+
+/* ---------- GRID ---------- */
+
+/* Grid that makes cards lay out evenly */
+.card-grid {
+  display: grid;
+  gap: 1.8rem;
+
+  /* Desktop: 3 columns, each at least 240px */
+  grid-template-columns: repeat(3, minmax(240px, 1fr));
+
+  /* Optional: ensure grid rows are uniform height (we'll set card heights separately) */
+  align-items: stretch;
+}
+
+
+/* ---------- CARDS ---------- */
+
+.card {
+  position: relative;
+  height: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding: 1.2rem;
+
+  text-decoration: none;
+  color: #f0ece8;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 0 0 6px black;
+
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+
+  border: 2px solid rgba(120, 45, 45, 0.4);
+  box-shadow:
+    0 0 15px rgba(0,0,0,0.7),
+    inset 0 0 25px rgba(0,0,0,0.6);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+}
+
+/* Dark fog fade */
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0));
+  z-index: 0;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  filter: brightness(1.12);
+  box-shadow:
+    0 0 25px rgba(180,0,0,0.5),
+    inset 0 0 35px rgba(0,0,0,0.7);
+}
+
+/* Make label sit ABOVE the fog */
+.card span,
+.card {
+  z-index: 1;
+}
+
+/* ---------- CARD IMAGES ---------- */
+#card-shadowdark {
+  background-image: url("global-assets/images/shadowdark.png");
+}
+
+#card-hollow-thrones {
+  background-image: url("global-assets/images/hollow-thrones.png");
+}
+
+#card-5e {
+  background-image: url("global-assets/images/5e.png");
+}
+
+#card-5-5e {
+  background-image: url("global-assets/images/5.5e.png");
+}
+
+#card-nimble {
+  background-image: url("global-assets/images/nimble.png");
+}
+
+#card-cc {
+  background-image: url("global-assets/images/c&c.png");
+}
