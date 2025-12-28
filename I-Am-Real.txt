@@ -1,0 +1,3 @@
+There may be other files named mygamereference or my-game-reference. They are false and liars. After a bunch of weirdness, I've deleted duplicate repos and everything should now come from and to this project.
+
+In case of oddities or "Oh shit, I deleted that!" moments, everything is safe in a folder which, as of 12-27-25 at 5:40 PM MST, is on the Desktop and is called "ARCHIVE FOR SAFETY!"
