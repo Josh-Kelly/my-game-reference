@@ -10,8 +10,8 @@ buttons.forEach((button) => {
     button.classList.add("active");
 
     contents.forEach((content) => {
-      content.classList.remove("active", "cards-container");
-      if (content.id === target) content.classList.add("active", "cards-container");
+      content.classList.remove("active", "sub-cards-container");
+      if (content.id === target) content.classList.add("active", "sub-cards-container");
     });
   });
 });

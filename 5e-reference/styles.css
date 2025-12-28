@@ -8,7 +8,7 @@ body {
   z-index: 0;
   font-family: "EB Garamond", serif;
   font-weight: 900;
-  background: url("images/dark-stone-bg2.jpg");
+  background: url("../0-global-assets/images/textures/dark-stone-bg2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;

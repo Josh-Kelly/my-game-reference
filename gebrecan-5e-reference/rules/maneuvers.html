@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maneuvers</title>
+    <link rel="stylesheet" href="../character-rules-styles.css" />
+  </head>
+  <body>
+    <div class="tabs">
+      <a href="../index.html">Back</a>
+      <button data-tab="all-maneuvers" class="active">All Maneuvers</button>
+      <button data-tab="attack-maneuvers">Attack Maneuvers</button>
+      <button data-tab="reaction-maneuvers">Reaction Maneuvers</button>
+      <button data-tab="skill-and-movement-maneuvers">Skill and Movement Maneuvers</button>
+    </div>
+
+    <div class="tab-content sub-cards-container active" id="all-maneuvers"></div>
+    <div class="tab-content" id="attack-maneuvers"></div>
+    <div class="tab-content" id="reaction-maneuvers"></div>
+    <div class="tab-content" id="skill-and-movement-maneuvers"></div>
+
+    <script src="../data/maneuvers.js"></script>
+    <script src="../../0-global-assets/js/maneuvers-card-behavior.js"></script>
+    <script src="../../0-global-assets/js/maneuvers-tab-behavior.js"></script>
+  </body>
+</html>
