@@ -35,17 +35,7 @@ function renderCards(items, containerId) {
     titleEl.textContent = item.title;
     card.appendChild(titleEl);
 
-    // Optional fields for utilities/fighting styles
-    const optionalFields = ["level", "applied", "duration", "trap", "arrow", "radius"];
-    optionalFields.forEach((field) => {
-      if (item[field]) {
-        const p = document.createElement("p");
-        p.textContent = `${field.charAt(0).toUpperCase() + field.slice(1)}: ${item[field]}`;
-        card.appendChild(p);
-      }
-    });
-
-    // Prerequisite (for fighting styles)
+    // Prerequisite
     if (item.prerequisite) {
       const prereq = document.createElement("p");
       prereq.textContent = `Prerequisite: ${item.prerequisite}`;
@@ -80,16 +70,16 @@ function renderCards(items, containerId) {
 
 /*------------------------------------------------------------------Page-Specific Logic -------------------------------------------------------------------*/
 
-/* Page-Specific Logic */
-
 if (kebabCase === "maneuvers") {
-  // Existing maneuver logic
+  // Merge and sort all maneuver sets
   const allManeuvers = [...attackManeuvers, ...reactionManeuvers, ...skillAndMovementManeuvers].sort((a, b) =>
     a.title.localeCompare(b.title)
   );
 
+  // Render the full "all-maneuvers" container
   renderCards(allManeuvers, "all-maneuvers");
 
+  // Render individual sets
   const maneuverSets = [
     { data: attackManeuvers, id: "attack-maneuvers" },
     { data: reactionManeuvers, id: "reaction-maneuvers" },
@@ -97,13 +87,9 @@ if (kebabCase === "maneuvers") {
   ];
 
   maneuverSets.forEach(({ data, id }) => renderCards(data, id));
-} else if (kebabCase === "utilities") {
-  // Render all utilities
-  const selectedUtilities = window["utilities"];
-  renderCards(selectedUtilities, `${kebabCase}-cards-container`);
 } else {
-  // Fallback for other fighting style pages
-  const selectedStyles = window[camelCase];
+  // For other pages, use dynamic global array based on camelCase page title
+  const selectedStyles = window[camelCase]; // or window[kebabCase] if your globals use kebab-case
 
   if (!selectedStyles) {
     console.warn(`No style array found for page title: ${camelCase}`);

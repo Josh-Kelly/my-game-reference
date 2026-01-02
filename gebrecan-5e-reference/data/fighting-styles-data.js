@@ -1,4 +1,4 @@
-const fightingStyles = [
+window["fightingStyles"] = [
   {
     title: "Archery",
     prerequisite: "None",

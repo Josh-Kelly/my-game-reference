@@ -1,4 +1,4 @@
-const attackManeuvers = [
+window["attackManeuvers"] = [
   {
     title: "Acrobatic Attack",
     prerequisite: "None",

@@ -1,4 +1,4 @@
-// Assuming fightingStyles is already defined in fighting-styles.js
+// Assuming fightingStyles is already defined in fighting-styles-data.js
 
 const allManeuvers = [...attackManeuvers, ...reactionManeuvers, ...skillAndMovementManeuvers].sort((a, b) =>
   a.title.localeCompare(b.title)
