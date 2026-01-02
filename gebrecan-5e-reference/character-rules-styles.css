@@ -342,7 +342,7 @@ tr.highlight td {
 }
 
 .shaded {
-  background: linear-gradient(180deg, rgba(20,16,15,0.6), rgba(10,8,8,0.7));
+  background: linear-gradient(180deg, rgba(20,16,15,0.8), rgba(10,8,8,0.9));
   border: 1px solid rgba(100,70,50,0.18);
   border-radius: 8px;
   padding: 6px 10px;
