@@ -381,14 +381,16 @@ tr.highlight td {
 
 .ability-card h4 {
   margin: 0;                    
-  font-size: 1.4rem;            
+  font-size: 1.6rem;            
 }
 
-.ability-card p {
+.ability-card p, li {
   margin: 0;                    
   line-height: 1.5;             
   font-size: 1.1rem;           
 }
+
+
 
 .ability-card:hover {
   transform: translateY(-2px);  
